@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import { icons } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react'
-import { SiGithub, SiInstagram, SiLinkedin } from 'react-icons/si';
+import { SiGithub, SiInstagram, SiLinkedin, SiVercel } from 'react-icons/si';
 
 export default function Navbar({className}: {className?: string}) {
     const socials = [
@@ -20,6 +20,11 @@ export default function Navbar({className}: {className?: string}) {
         Label: "LinkedIn",
         Link: "https://www.linkedin.com/in/iqbal-nurrizqi/",
         icons: SiLinkedin,
+      },
+      {
+        Label: "LinkedIn",
+        Link: "https://vercel.com/iqbal-nurrizqis-projects",
+        icons: SiVercel,
       },
     ];
   return (

@@ -10,29 +10,29 @@ export default function Project() {
     {
       title: "Project 1",
       tech: [SiReact, SiNextdotjs, SiTailwindcss],
-      Link: "https://github.com",
-      cover: "/gambar1.png",
+      Link: "https://github.com/iqbalnurrizqi",
+      cover: "/image.png",
       background: "bg-indigo-500",
     },
     {
       title: "Project 2",
       tech: [SiReact, SiNextdotjs, SiTailwindcss],
-      Link: "https://github.com",
-      cover: "/gambar2.png",
+      Link: "https://github.com/iqbalnurrizqi",
+      cover: "/weather.png",
       background: "bg-green-500",
     },
     {
       title: "Project 2",
       tech: [SiReact, SiNextdotjs, SiTailwindcss],
-      Link: "https://github.com",
-      cover: "/gambar2.png",
+      Link: "https://github.com/iqbalnurrizqi",
+      cover: "/hotel.png",
       background: "bg-yellow-500",
     },
     {
       title: "Project 2",
       tech: [SiReact, SiNextdotjs, SiTailwindcss],
-      Link: "https://github.com",
-      cover: "/gambar2.png",
+      Link: "https://github.com/iqbalnurrizqi",
+      cover: "/malaka.png",
       background: "bg-red-500",
     },
   ];
@@ -47,10 +47,10 @@ export default function Project() {
           {projects.map((project, index) => {
             return (
               <Link href={project.Link} key={index}>
-                <div className={cn("p-5 rounded-md", project.background)}>
+                <div className={cn("p-5 rounded-md ", project.background)}>
                   <DirectionAwareHover
                     imageUrl={project.cover}
-                    className="w-full space-y-5 cursor-pointer"
+                    className="max-h-72 space-y-5 cursor-pointer"
                   >
                     <div className="space-y-5">
                       <h1 className="font-bold text-2xl">{project.title}</h1>
